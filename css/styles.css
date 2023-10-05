@@ -1,0 +1,56 @@
+
+html, body
+{
+    height: 100%;
+    background-color: steelblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.calculator 
+{
+    width: 90%;
+    height: 90%;
+    text-align: center;
+
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 1%;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.1);
+}
+
+input.display 
+{
+    text-align: right;
+    width: 80%;
+    font-size: 200%;
+}
+
+div.buttons  
+{
+    width: 50%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid black;
+}
+
+div.button_row
+{
+    display: table-row;
+    width: 50%;
+}
+
+div.button_row button
+{
+    display: table-cell;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+button.buttons:active 
+{
+
+}

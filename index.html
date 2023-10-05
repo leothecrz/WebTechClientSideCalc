@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Leonardo's Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        
+        <input id="calcDisplay" type="text" class="display" >
+        
+        <div id="calcButtons" class="buttons">
+            <div class="button_row">
+                <button id="ClearALLButton" onclick="clearCalcDisplay()"> AC </button>
+                <button id="DelOneButton" onclick="delCalcDisplay()"> DEL </button>
+                <button > ^ </button>
+                <button > * </button>
+            </div>
+            
+            <div class="button_row">
+                <button > 7 </button>
+                <button > 8 </button>
+                <button > 9 </button>
+                <button > + </button>
+            </div>
+
+            
+            <div class="button_row">
+                <button > 6 </button>
+                <button > 5 </button>
+                <button > 4 </button>
+                <button > - </button>
+            </div>
+            
+            <div class="button_row">
+                <button > 3 </button>
+                <button > 2 </button>
+                <button > 1 </button>
+                <button > / </button>
+            </div>
+
+            <div class="button_row">
+                <button > ( </button>
+                <button > 0</button>
+                <button > ) </button>
+                <button id="EnterButton" onclick="evaluateInput()"> =/Enter </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="js/infix.js" ></script>
+<script src="js/inToPostFix.js" ></script>
+<script src="js/postfixSolver.js" ></script>
+<script src="js/main.js" ></script>
+
+
+</html>
