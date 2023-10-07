@@ -1,7 +1,7 @@
 function solvePostfix(input) 
 {
     const stack = [];
-    for (let tkn of input.split(' ')) 
+    for (let tkn of input) 
     {
         if ( !isNaN(tkn) ) //push numbers to the stack
             stack.push(parseInt(tkn));

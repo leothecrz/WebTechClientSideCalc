@@ -5,12 +5,12 @@ body
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #f0f0f0;
+    background-color: black;
 }
 
 .calculator 
 {
-    background-color: #fff;
+    background-color: darkgray;
     border-radius: 1%;
     box-shadow: 0 4px 8px  lightgray;
     padding: 2%;
@@ -18,6 +18,7 @@ body
 
 .display 
 {
+    background-color: darkgray;
     width: 100%;
     font-size: 3.5em;
     margin-bottom: 1%;
@@ -29,7 +30,6 @@ body
 
 .buttons 
 {
-    
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -42,6 +42,8 @@ body
 
 button 
 {
+    background-color: gray;
+    color: aliceblue;
     width: 100%;
     height: 100%;
     font-size: 2em;
@@ -55,4 +57,5 @@ button
 button:hover 
 {
     background-color: #ddd;
+    color: black;
 }

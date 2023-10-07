@@ -27,12 +27,12 @@ function delCalcDisplay()
  */
 function evaluateInput()
 {
-    var out = document.getElementById("calcDisplay").value;
-    if(isInfix(out))
+    var out = document.getElementById("calcDisplay");
+    if(isInfix(out.value))
     {
-        var stage2 = infixToPostfix(out);
-        var ans = solvePostfix(stage2);
-        alert(ans);
+        var ans = solvePostfix( infixToPostfix( out.value ) );
+        //alert(ans);
+        out.value = ans.toString();
     }
     else
     {
@@ -48,8 +48,8 @@ buttons.forEach( button =>
     if(button.id != "")
         return;
     button.addEventListener('click', 
-    function() 
-    {
-        appenedToCalcDisplay(button.innerText)
-    });
+        function() 
+        {
+            appenedToCalcDisplay(button.innerText)
+        });
 })
