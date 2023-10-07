@@ -1,64 +1,58 @@
-
-html, body
+body 
 {
-    height: 95%;
-    background-color: steelblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-div.calculator 
-{
-
-    width: 90%;
-    height: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding: 5%;
-    border-radius: 1%;
-    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.1);
-}
-
-input.display 
-{
-    text-align: right;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    font-size: 200%;
-}
-
-div.buttons  
-{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-
-
-    display: grid;
-
-    gap: 5% 0%;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    border: 1px solid black;
-}
-
-div.button_row
-{
-}
-
-div.button_row button
-{
-    border-radius: 10%;
-    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    background-color: #f0f0f0;
 }
 
-button.buttons:active 
+.calculator 
 {
+    background-color: #fff;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px  lightgray;
+    padding: 2%;
+}
 
+.display 
+{
+    width: 100%;
+    font-size: 3.5em;
+    margin-bottom: 1%;
+    text-align: right;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+.buttons 
+{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.button_row 
+{
+    display: flex;
+    padding: 1%;
+}
+
+button 
+{
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+button:hover 
+{
+    background-color: #ddd;
 }
